@@ -15,6 +15,10 @@
 		BE5B988220A2F41B00E61A79 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5B988120A2F41B00E61A79 /* main.m */; };
 		BE5B988C20A2F41B00E61A79 /* CircularTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5B988B20A2F41B00E61A79 /* CircularTimerTests.m */; };
 		BE5B989720A2F41B00E61A79 /* CircularTimerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5B989620A2F41B00E61A79 /* CircularTimerUITests.m */; };
+		BE99EA0820A2F4EB00E6B2A8 /* FCAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE99EA0720A2F4EB00E6B2A8 /* FCAnimationView.m */; };
+		BE99EA1120A2F8B600E6B2A8 /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE99EA0F20A2F8B600E6B2A8 /* KDCircularProgress.swift */; };
+		BE99EA1420A303DF00E6B2A8 /* FCDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE99EA1320A303DF00E6B2A8 /* FCDrawingView.m */; };
+		BE99EA1720A324C800E6B2A8 /* LineViewAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = BE99EA1620A324C800E6B2A8 /* LineViewAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,15 @@
 		BE5B989220A2F41B00E61A79 /* CircularTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircularTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5B989620A2F41B00E61A79 /* CircularTimerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircularTimerUITests.m; sourceTree = "<group>"; };
 		BE5B989820A2F41B00E61A79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE99EA0620A2F4EB00E6B2A8 /* FCAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCAnimationView.h; sourceTree = "<group>"; };
+		BE99EA0720A2F4EB00E6B2A8 /* FCAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCAnimationView.m; sourceTree = "<group>"; };
+		BE99EA0E20A2F8B500E6B2A8 /* CircularTimer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CircularTimer-Bridging-Header.h"; sourceTree = "<group>"; };
+		BE99EA0F20A2F8B600E6B2A8 /* KDCircularProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDCircularProgress.swift; sourceTree = "<group>"; };
+		BE99EA1020A2F8B600E6B2A8 /* KDCircularProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDCircularProgress.h; sourceTree = "<group>"; };
+		BE99EA1220A303DF00E6B2A8 /* FCDrawingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCDrawingView.h; sourceTree = "<group>"; };
+		BE99EA1320A303DF00E6B2A8 /* FCDrawingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCDrawingView.m; sourceTree = "<group>"; };
+		BE99EA1520A324C800E6B2A8 /* LineViewAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LineViewAnimation.h; sourceTree = "<group>"; };
+		BE99EA1620A324C800E6B2A8 /* LineViewAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineViewAnimation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +114,7 @@
 		BE5B987120A2F41B00E61A79 /* CircularTimer */ = {
 			isa = PBXGroup;
 			children = (
+				BE99EA0520A2F4D100E6B2A8 /* AnimationView */,
 				BE5B987220A2F41B00E61A79 /* AppDelegate.h */,
 				BE5B987320A2F41B00E61A79 /* AppDelegate.m */,
 				BE5B987520A2F41B00E61A79 /* ViewController.h */,
@@ -130,6 +144,22 @@
 				BE5B989820A2F41B00E61A79 /* Info.plist */,
 			);
 			path = CircularTimerUITests;
+			sourceTree = "<group>";
+		};
+		BE99EA0520A2F4D100E6B2A8 /* AnimationView */ = {
+			isa = PBXGroup;
+			children = (
+				BE99EA1020A2F8B600E6B2A8 /* KDCircularProgress.h */,
+				BE99EA0F20A2F8B600E6B2A8 /* KDCircularProgress.swift */,
+				BE99EA0620A2F4EB00E6B2A8 /* FCAnimationView.h */,
+				BE99EA0720A2F4EB00E6B2A8 /* FCAnimationView.m */,
+				BE99EA0E20A2F8B500E6B2A8 /* CircularTimer-Bridging-Header.h */,
+				BE99EA1220A303DF00E6B2A8 /* FCDrawingView.h */,
+				BE99EA1320A303DF00E6B2A8 /* FCDrawingView.m */,
+				BE99EA1520A324C800E6B2A8 /* LineViewAnimation.h */,
+				BE99EA1620A324C800E6B2A8 /* LineViewAnimation.m */,
+			);
+			path = AnimationView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +229,7 @@
 				TargetAttributes = {
 					BE5B986E20A2F41B00E61A79 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					BE5B988620A2F41B00E61A79 = {
@@ -265,8 +296,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE99EA0820A2F4EB00E6B2A8 /* FCAnimationView.m in Sources */,
+				BE99EA1720A324C800E6B2A8 /* LineViewAnimation.m in Sources */,
+				BE99EA1120A2F8B600E6B2A8 /* KDCircularProgress.swift in Sources */,
 				BE5B987720A2F41B00E61A79 /* ViewController.m in Sources */,
 				BE5B988220A2F41B00E61A79 /* main.m in Sources */,
+				BE99EA1420A303DF00E6B2A8 /* FCDrawingView.m in Sources */,
 				BE5B987420A2F41B00E61A79 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +465,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V273NW4VAJ;
 				INFOPLIST_FILE = CircularTimer/Info.plist;
@@ -437,6 +473,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.reezo.imageslider.CircularTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CircularTimer/AnimationView/CircularTimer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -445,6 +484,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V273NW4VAJ;
 				INFOPLIST_FILE = CircularTimer/Info.plist;
@@ -452,6 +492,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.reezo.imageslider.CircularTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CircularTimer/AnimationView/CircularTimer-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -459,6 +501,7 @@
 		BE5B989F20A2F41B00E61A79 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V273NW4VAJ;
@@ -474,6 +517,7 @@
 		BE5B98A020A2F41B00E61A79 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V273NW4VAJ;
@@ -489,6 +533,7 @@
 		BE5B98A220A2F41B00E61A79 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V273NW4VAJ;
 				INFOPLIST_FILE = CircularTimerUITests/Info.plist;
@@ -503,6 +548,7 @@
 		BE5B98A320A2F41B00E61A79 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V273NW4VAJ;
 				INFOPLIST_FILE = CircularTimerUITests/Info.plist;

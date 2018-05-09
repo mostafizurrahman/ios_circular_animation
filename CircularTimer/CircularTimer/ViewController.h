@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KDCircularProgress.h"
+#import "LineViewAnimation.h"
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
+@property (weak, nonatomic) IBOutlet LineViewAnimation *lineAnimationView;
 
 @end
 
